@@ -6,15 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" href="/images/iconcorallo (1).png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Rosso Corallo</title>
-
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-
     <link rel="stylesheet" href="css/style.css">
 
 </head>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
 
 <body>
 
@@ -38,22 +37,46 @@
         <div class="icons">
             <div class="fas fa-bars" id="menu-btn"></div>
         </div>
-
     </header>
+    <br><br><br><br><br><br><br><br><br>
+    <!-- Carousel -->
+
 
     <!-- header section ends -->
 
     <!-- home section starts  -->
 
-    <section class="home" id="home">
 
-        <div class="content">
-            <h3>ROSSO CORALLO</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat labore, sint cupiditate distinctio tempora reiciendis.</p>
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
         </div>
 
-    </section>
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/images/imgprova.jpg" alt="" class="d-block" style="width:50% height: 40%;">
+            </div>
+            <div class="carousel-item">
+                <img src="/images/imgprova.jpg" alt="" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="/images/imgprova.jpg" alt="" class="d-block" style="width:100%">
+            </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+    </div>
 
     <!-- home section ends -->
 
@@ -91,7 +114,7 @@
         <div class="box-container">
 
             <div class="box">
-                <img src="" alt="">
+
             </div>
 
             <div class="box">
@@ -154,7 +177,7 @@
 
             <div class="box">
                 <img src="images/virgolette.png" alt="" class="quote">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo.</p>
+                <p>Cortesia,competenza,ottima puntualità nella consegna,assolutmanete consigliato per tutti.</p>
                 <img src="images/testimone.png" class="user" alt="">
                 <h3>Damiano Corallo</h3>
                 <div class="stars">
@@ -168,8 +191,8 @@
 
             <div class="box">
                 <img src="images/virgolette.png" alt="" class="quote">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo.</p>
-                <img src="images/testimone.png" class="user" alt="">
+                <p>Disponibilità,profesionalità,sono le parole adatte a questo brand,ottimi capi.</p>
+                <img src="https://i.pinimg.com/236x/04/3e/af/043eaf8f2b5d1110b5e60bc4444df7e4.jpg" class="user" alt="">
                 <h3>Giusy Di Modica</h3>
                 <div class="stars">
                     <i class="fas fa-star"></i>
@@ -182,8 +205,8 @@
 
             <div class="box">
                 <img src="images/virgolette.png" alt="" class="quote">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo.</p>
-                <img src="images/testimone.png" class="user" alt="">
+                <p>capi fantastici,di qualità,a prezzi ottimi...consigliato</p>
+                <img src="https://i.pinimg.com/550x/fe/8a/4a/fe8a4ab072e4ec77af51aeabe53ec1a5.jpg" class="user" alt="">
                 <h3>Silvia Prestifilippo</h3>
                 <div class="stars">
                     <i class="fas fa-star"></i>
@@ -216,15 +239,15 @@
                 <h4>Abbigliamento</h4>
                 <div class="inputBox">
                     <span class="fas fa-user"></span>
-                    <input type="text" placeholder="name">
+                    <input type="text" placeholder="Name">
                 </div>
                 <div class="inputBox">
                     <span class="fas fa-envelope"></span>
-                    <input type="email" placeholder="email">
+                    <input type="email" placeholder="Email">
                 </div>
                 <div class="inputBox">
                     <span class="fas fa-phone"></span>
-                    <input type="number" placeholder="number">
+                    <input type="number" placeholder="Number">
                 </div>
                 <input type="submit" value="Send" class="btn">
             </form>

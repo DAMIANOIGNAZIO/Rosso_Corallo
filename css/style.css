@@ -65,7 +65,7 @@ section {
 }
 
 .header {
-    background: var(--bg);
+    background-color: rgb(121, 17, 17);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -79,11 +79,12 @@ section {
 }
 
 .header .logo img {
-    height: 8rem;
-    width: 17rem;
+    height: 10rem;
+    width: 21rem;
 }
 
 .header .navbar a {
+    text-decoration: none;
     margin: 0 1rem;
     font-size: 1.6rem;
     color: #fff;
@@ -110,7 +111,7 @@ section {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url('http://fotografiasmart.it/wp-content/uploads/2020/04/cosa-fotografare-a-casa-splash-1024x563.jpg') no-repeat;
+    background: url('https://ak.picdn.net/shutterstock/videos/28452547/thumb/3.jpg') no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -120,17 +121,19 @@ section {
 }
 
 .home .content h3 {
+    padding-top: 50%;
+    padding-left: 80%;
     font-size: 6.4rem;
     text-transform: uppercase;
-    color: red;
+    color: rgba(0, 0, 0, 0.815);
 }
 
 .home .content p {
     font-size: 2.6rem;
-    font-weight: lighter;
+    font-weight: 100px;
     line-height: 1.8;
     padding: 1rem 0;
-    color: var(--main-color);
+    color: #fff;
 }
 
 .about .row {
@@ -172,7 +175,9 @@ section {
 }
 
 .menu .box-container .box {
-    background-image: url('/images/imgprova.jpg');
+    height: 200px;
+    background-image: url('/images/iconcorallo\ \(1\).png');
+    background-size: cover;
     text-align: center;
     padding: 5rem;
     border: var(--border);
@@ -180,7 +185,7 @@ section {
 
 .review .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     gap: 1.5rem;
 }
 
