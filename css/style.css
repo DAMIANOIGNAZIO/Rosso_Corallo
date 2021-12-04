@@ -272,9 +272,6 @@ section {
 }
 
 @media (max-width:768px) {
-    #menu-btn {
-        display: inline-block;
-    }
     .header .navbar {
         position: absolute;
         top: 100%;
@@ -293,20 +290,21 @@ section {
         padding: .5rem;
         font-size: 2rem;
     }
-    .header .search-form {
-        width: 90%;
-        right: 2rem;
-    }
     .home {
         background-position: left;
         justify-content: center;
         text-align: center;
     }
-    .home .content h3 {
+    .small-container {
         font-size: 4.5rem;
     }
-    .home .content p {
+    .small-container p {
         font-size: 1.5rem;
+    }
+    .col-2 {
+        margin-left: 20px;
+        padding-top: 65px;
+        font-size: 40px;
     }
 }
 
