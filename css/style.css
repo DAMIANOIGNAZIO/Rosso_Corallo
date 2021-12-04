@@ -105,24 +105,6 @@ section {
     background-position: center;
 }
 
-.home .content {
-    max-width: 60rem;
-}
-
-.home .content h3 {
-    font-size: 6rem;
-    text-transform: uppercase;
-    color: #fff;
-}
-
-.home .content p {
-    font-size: 2rem;
-    font-weight: lighter;
-    line-height: 1.8;
-    padding: 1rem 0;
-    color: #eee;
-}
-
 .about .row {
     display: flex;
     align-items: center;
@@ -335,10 +317,20 @@ section {
 }
 
 .small-container {
+    font-size: 2rem;
+    text-transform: uppercase;
     max-width: 1080px;
     margin: auto;
     padding-left: -50px;
     padding-right: 95px;
+}
+
+.small-container p {
+    font-size: 17px;
+    font-weight: lighter;
+    line-height: 1.5;
+    padding: 1rem 0;
+    color: rgb(255, 0, 0);
 }
 
 .row {
@@ -354,6 +346,6 @@ section {
 }
 
 .col-2 img {
-    max-width: 120%;
+    max-width: 150%;
     padding: 80px 0;
 }
