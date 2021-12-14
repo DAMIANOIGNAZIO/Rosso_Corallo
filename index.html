@@ -3,299 +3,425 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rosso Corallo - Abbigliamento</title>
-
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/style.css">
-
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Rosso Corallo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+<script>
+    /* When the user clicks on the button, 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
 
 <body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <br>
 
-    <!-- header section starts  -->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">Chi siamo</a>
+                    </li>
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn" class="nav__link">Abbigliamento</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#home">Abbigliamento Uomo</a>
+                            <a href="#about">Abbigliamento Donna</a>
+                            <a href="#contact">Abbigliamento Bambino</a>
+                        </div>
+                    </div>
+                    <li class="nav__item">
+                        <a href="#video" class="nav__link">Video</a>
+                    </li>
+                </ul>
 
-    <header class="header">
+                <div class="nav__dark">
+                    <!-- Theme change button -->
+                    <span class="change-theme-name">Dark</span>
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+                </div>
 
-        <a href="#" class="logo">
-            <img src="images/rossocoraloicon.PNG" alt="">
-        </a>
+                <i class="ri-close-line nav__close" id="nav-close"></i>
+            </div>
 
-        <nav class="navbar">
-            <a href="#home">home</a>
-            <a href="#about">about</a>
-            <a href="#menu">menu</a>
-            <a href="#products">products</a>
-            <a href="#review">review</a>
-            <a href="#contact">contact</a>
-            <a href="#blogs">blogs</a>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-function-line"></i>
+            </div>
         </nav>
-
-        <div class="icons">
-            <div class="fas fa-bars" id="menu-btn"></div>
-        </div>
     </header>
 
-    <!-- header section ends -->
 
-    <!-- home section starts  -->
+    <main class="main">
 
-    <section class="content">
-        <div id="wacth" class="small-container">
-            <div class="row">
-                <div class="col-2">
-                    <h1>Rosso Corallo</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam nemo ab rem, blanditiis voluptatibus sapiente odio, esse tempora quam unde cupiditate ipsa nisi, provident necessitatibus deleniti illo laudantium quisquam quia?</p>
+        <!--==================== HOME ====================-->
+        <section class="home" id="home">
+            <img src="assets/img/home.jpg" alt="" class="home__img">
+
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <br><br><br><br>
+                    <span class="home__data-subtitle">  <img id="logo" src="assets/img/logo1.png" alt=""></span>
+                    <br>
+                    </h1>
                 </div>
-                <div class="col-2">
-                    <img src="images/giubotto.png" class="offer-img">
+
+                <div class="home__social">
+                    <a href="https://www.facebook.com/rossocorallo74" target="_blank" class="home__social-link">
+                        <img src="/assets/img/face.png" width="75px" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                        <img src="/assets/img/insta.png" width="55px" alt="">
+                    </a>
                 </div>
 
+            </div>
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <h2 class="section__title about__title">Chi siamo?</h2>
+                    <p class="about__description">You can find the most beautiful and pleasant places at the best prices with special discounts, you choose the place we will guide you all the way to wait, get your place now.
+                    </p>
+
+                </div>
+
+                <div class="about__img">
+                    <div class="about__img-overlay">
+                        <img src="assets/img/about1.jpg" alt="" class="about__img-one">
+                    </div>
+
+                    <div class="about__img-overlay">
+                        <img src="assets/img/about2.jpg" alt="" class="about__img-two">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <h2 class="section__title" id="abbigliamento">UOMO</h2>
+
+        <div class="w3-row-padding">
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <img src="assets/img/05.png" alt="" style="width:100%">
+                    <h4>ciao</h4>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <img src="/assets/img/05.png" alt="" style="width:100%">
+                    <h4>ciao</h4>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <img src="/assets/img/05.png" alt="" style="width:100%">
+                    <h4>ciao
+                    </h4>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <img src="/assets/img/05.png" alt="" style="width:100%">
+                    <h4>ciao</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row-padding">
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <img src="/assets/img/05.png" alt="" style="width:99%">
+                    <h4>ciao</h4>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <img src="/assets/img/05.png" alt="" style="width:99%">
+                    <h4>ciao</h4>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <img src="assets/img/05.png" alt="" style="width:99%">
+                    <h4>ciao</h4>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <img src="assets/img/05.png" alt="" style="width:99%">
+                    <h4>ciao</h4>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section__title">DONNA</h2>
+
+        <div class="w3-row-padding">
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <img src="" alt="" style="width:100%">
+                    <h4>ciao</h4>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <img src="" alt="" style="width:100%">
+                    <h4>ciao</h4>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <img src="" alt="" style="width:100%">
+                    <h4>ciao
+                    </h4>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <img src="" alt="" style="width:100%">
+                    <h4>ciao</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row-padding">
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <img src="" alt="" style="width:99%">
+                    <h4>ciao</h4>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <img src="" alt="" style="width:99%">
+                    <h4>ciao</h4>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <img src="" alt="" style="width:99%">
+                    <h4>ciao</h4>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <img src="" alt="" style="width:99%">
+                    <h4>ciao</h4>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section__title">BAMBINO/A</h2>
+
+        <div class="w3-row-padding">
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <img src="" alt="" style="width:100%">
+                    <h4>ciao</h4>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <img src="" alt="" style="width:100%">
+                    <h4>ciao</h4>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <img src="" alt="" style="width:100%">
+                    <h4>ciao
+                    </h4>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <img src="" alt="" style="width:100%">
+                    <h4>ciao</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row-padding">
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <img src="" alt="" style="width:99%">
+                    <h4>ciao</h4>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <img src="" alt="" style="width:99%">
+                    <h4>ciao</h4>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <img src="" alt="" style="width:99%">
+                    <h4>ciao</h4>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <img src="" alt="" style="width:99%">
+                    <h4>ciao</h4>
+                </div>
             </div>
         </div>
 
 
-    </section>
-
-    <!-- home section ends -->
-
-    <!-- about section starts  -->
-
-    <section class="about" id="about">
-
-        <h1 class="heading"> about </h1>
-
-        <div class="row">
-
-            <div class="image">
-                <img src="images/about-img.jpeg" alt="">
-            </div>
-
-            <div class="content">
-                <h3>what makes our coffee special?</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus qui ea ullam, enim tempora ipsum fuga alias quae ratione a officiis id temporibus autem? Quod nemo facilis cupiditate. Ex, vel?</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit amet enim quod veritatis, nihil voluptas culpa! Neque consectetur obcaecati sapiente?</p>
-                <a href="#" class="btn">learn more</a>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- about section ends -->
-
-    <!-- menu section starts  -->
-
-    <section class="menu" id="menu">
-
-        <h1 class="heading">catalogo</h1>
-
-        <div class="box-container">
-
-            <div class="box">
-                <img src="images/menu-1.png" alt="">
-                <h3>tasty and healty</h3>
-
-            </div>
-
-            <div class="box">
-                <img src="images/menu-2.png" alt="">
-                <h3>tasty and healty</h3>
-
-            </div>
-
-            <div class="box">
-                <img src="images/menu-3.png" alt="">
-                <h3>tasty and healty</h3>
-
-            </div>
-
-            <div class="box">
-                <img src="images/menu-4.png" alt="">
-                <h3>tasty and healty</h3>
-
-            </div>
-
-            <div class="box">
-                <img src="images/menu-5.png" alt="">
-                <h3>tasty and healty</h3>
-
-            </div>
-
-            <div class="box">
-                <img src="images/menu-6.png" alt="">
-                <h3>tasty and healty</h3>
-
-            </div>
-
-            <div class="box">
-                <img src="images/menu-6.png" alt="">
-                <h3>tasty and healty</h3>
-
-            </div>
-
-            <div class="box">
-                <img src="images/menu-6.png" alt="">
-                <h3>tasty and healty</h3>
-
-            </div>
-
-            <div class="box">
-                <img src="images/menu-6.png" alt="">
-                <h3>tasty and healty</h3>
-            </div>
-            <div class="box">
-                <img src="images/menu-1.png" alt="">
-                <h3>tasty and healty</h3>
-
-            </div>
-
-            <div class="box">
-                <img src="images/menu-2.png" alt="">
-                <h3>tasty and healty</h3>
-
-            </div>
-
-            <div class="box">
-                <img src="images/menu-3.png" alt="">
-                <h3>tasty and healty</h3>
-
-            </div>
-
-            <div class="box">
-                <img src="images/menu-4.png" alt="">
-                <h3>tasty and healty</h3>
-
-            </div>
-
-            <div class="box">
-                <img src="images/menu-5.png" alt="">
-                <h3>tasty and healty</h3>
-
-            </div>
-
-            <div class="box">
-                <img src="images/menu-6.png" alt="">
-                <h3>tasty and healty</h3>
-
-            </div>
-
-            <div class="box">
-                <img src="images/menu-6.png" alt="">
-                <h3>tasty and healty</h3>
-
-            </div>
-
-            <div class="box">
-                <img src="images/menu-6.png" alt="">
-                <h3>tasty and healty</h3>
-
-            </div>
-
-            <div class="box">
-                <img src="images/menu-6.png" alt="">
-                <h3>tasty and healty</h3>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- menu section ends -->
 
 
+        <!--==================== EXPERIENCE ====================-->
 
 
+        <!--==================== VIDEO ====================-->
+        <section class="video section">
+            <h2 class="section__title">Video</h2>
 
+            <div class="video__container container">
+                <p class="video__description">Find out more with our video of the most beautiful and pleasant places for you and your family.
+                </p>
 
-    <!-- contact section ends -->
+                <div class="video__content">
+                    <video id="video-file">
+                            <source src="assets/video/video.mp4" type="video/mp4">
+                        </video>
 
-    <!-- blogs section starts  -->
-
-    <section class="blogs" id="blogs">
-
-        <h1 class="heading">blogs</h1>
-
-        <div class="box-container">
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/blog-1.jpeg" alt="">
+                    <button class="button button--flex video__button" id="video-button">
+                            <i class="ri-play-line video__button-icon" id="video-icon"></i>
+                        </button>
                 </div>
-                <div class="content">
-                    <a href="#" class="title">tasty and refreshing coffee</a>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dicta.</p>
-                    <span>04/12/2021</span>
+
+            </div>
+
+        </section>
+
+
+        <!--==================== PLACES ====================-->
+
+
+
+
+        <!--==================== SPONSORS ====================-->
+        <section class="sponsor section">
+            <div class="sponsor__container container grid">
+                <div class="sponsor__content">
+                    <img src="assets/img/fruit.png" alt="" class="sponsor__img">
+                </div>
+                <div class="sponsor__content">
+                    <img src="assets/img/jhk-logo.png" alt="" class="sponsor__img">
+                </div>
+                <div class="sponsor__content">
+                    <img src="assets/img/fruit.png" alt="" class="sponsor__img">
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <div id="footer">
+
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content grid">
+                    <div class="footer__data">
+                        <img src="/assets/img/logo.png" alt="" width="120px" height="100px">
+                        <p class="footer__description">Travel you choose the <br> destination, we offer you the <br> experience.
+                        </p>
+                        <br>
+                        <div>
+                            <a href="https://www.facebook.com/" target="_blank" class="footer__social">
+                                <i class="ri-facebook-box-fill"></i>
+                            </a>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">Link</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Home</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">About</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Prodotti</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">blog</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">Contatti</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Sicilia | Catania</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="https://wa.me/3900000000">whatsapp</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link fas fa-envelope">corallodamiano1@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="footer__rights">
+                    <p class="footer__copy">&#169; | 2021 | Rosso Corallo. All rigths reserved.</p>
+
                 </div>
             </div>
+        </footer>
+    </div>
 
-            <div class="box">
-                <div class="image">
-                    <img src="images/blog-2.jpeg" alt="">
-                </div>
-                <div class="content">
-                    <a href="#" class="title">tasty and refreshing coffee</a>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dicta.</p>
-                    <span>04/12/2021</span>
-                </div>
-            </div>
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line scrollup__icon"></i>
+    </a>
 
-            <div class="box">
-                <div class="image">
-                    <img src="images/blog-3.jpeg" alt="">
-                </div>
-                <div class="content">
-                    <a href="#" class="title">tasty and refreshing coffee</a>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dicta.</p>
-                    <span>04/12/2021</span>
-                </div>
-            </div>
+    <!--=============== SCROLL REVEAL===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
 
-        </div>
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
 
-    </section>
-
-    <!-- blogs section ends -->
-
-    <!-- footer section starts  -->
-
-    <section class="footer">
-
-        <div class="share">
-            <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-instagram"></a>
-        </div>
-
-
-        <div class="credit">created by Damiano Corallo | all rights reserved</div>
-
-    </section>
-
-    <!-- footer section ends -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- custom js file link  -->
-    <script src="js/script.js"></script>
-
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
