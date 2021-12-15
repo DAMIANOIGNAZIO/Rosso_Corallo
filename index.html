@@ -14,7 +14,7 @@
 </head>
 <script>
     /* When the user clicks on the button, 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    toggle between hiding and showing the dropdown content */
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        toggle between hiding and showing the dropdown content */
     function myFunction() {
         document.getElementById("myDropdown").classList.toggle("show");
     }
@@ -37,8 +37,7 @@
 <body>
     <header class="header" id="header">
         <nav class="nav container">
-            <br>
-
+            <span class="home__data-subtitle">  <img id="logo" src="assets/img/logo1.png" alt=""></span>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
@@ -48,11 +47,12 @@
                         <a href="#about" class="nav__link">Chi siamo</a>
                     </li>
                     <div class="dropdown">
-                        <button onclick="myFunction()" class="dropbtn" class="nav__link">Abbigliamento</button>
-                        <div id="myDropdown" class="dropdown-content">
-                            <a href="#home">Abbigliamento Uomo</a>
-                            <a href="#about">Abbigliamento Donna</a>
-                            <a href="#contact">Abbigliamento Bambino</a>
+                        <li class="nav__link"><button onclick="myFunction()" class="dropbtn" class="nav__link">Abbigliamento</button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="#home">Abbigliamento Uomo</a>
+                                <a href="#about">Abbigliamento Donna</a>
+                                <a href="#contact">Abbigliamento Bambino</a>
+                        </li>
                         </div>
                     </div>
                     <li class="nav__item">
@@ -85,7 +85,7 @@
             <div class="home__container container grid">
                 <div class="home__data">
                     <br><br><br><br>
-                    <span class="home__data-subtitle">  <img id="logo" src="assets/img/logo1.png" alt=""></span>
+                    <span class="home__data-subtitle">Abbigliamento</span>
                     <br>
                     </h1>
                 </div>
